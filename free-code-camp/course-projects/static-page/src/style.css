@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+.navbar{
+    background-color: #21222A;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    align-items: center;
+    padding: 0.25em;
+}
+.logo{
+    width: 30px;
+    margin-inline: 1em;
+}
+.title{
+    color: #61DAFB;
+    margin-right: auto;
+}
+.sub-title{
+    margin-right: 1em;
+}
+
+.main{
+    padding: 2em;
+    color: white;
+    background-color: #282D35;
+    background-image: url('./img/background-large.svg');
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+.factList{
+    margin-top: 2em;
+}
+.fact{
+    margin-bottom: 1em;
+}
+.fact::marker{
+    color: #61DAFB;
+    font-size: 1.3em;
+}
+
+@media (max-width: 720px){
+    .main{
+        background-position: 140% center;
+    }
+}
