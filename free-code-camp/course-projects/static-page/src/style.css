@@ -5,13 +5,17 @@ body{
     margin: 0;
     font-family: 'Inter', sans-serif;
 }
-.navbar{
+.nav{
     background-color: #21222A;
     display: flex;
     flex-wrap: wrap;
     color: white;
     align-items: center;
     padding: 0.25em;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.05);
+}
+.nav.light{
+    background-color: #fff;
 }
 .logo{
     width: 30px;
@@ -33,6 +37,12 @@ body{
     background-repeat: no-repeat;
     background-position: right center;
 }
+.main.light{
+    background-color: white;
+    background-image: url('./img/background-large-light.svg');
+    background-position: right center;
+    color: #282D35;
+}
 .factList{
     margin-top: 2em;
 }
@@ -48,4 +58,58 @@ body{
     .main{
         background-position: 140% center;
     }
+}
+
+.toogler{
+    display: flex;
+    align-items: center;
+    margin-right: 1em;
+    color: #D5D4D8;
+}
+.toogler p{
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+.toogler-slide{
+    height: 1.3rem;
+    width: 2.5rem;
+    border-radius: 2rem;
+    background-color: #f5f5f5;
+    border: 2px solid white;
+    margin-inline: .5em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: flex-end;
+}
+.nav.light .toogler-slide{
+    border-color: black;
+    background-color: #2B283A;
+}
+.toogler-circle{
+    height: 1.2em;
+    width: 1.2em;
+    background-color: #2B283A; 
+    border-radius: 50%;
+}
+.nav.light .toogler-circle{
+    background-color: white;
+}
+
+.toogler-dark{
+    color: #fff;
+}
+.toogler-light{
+    color: #918E9B;
+}
+.nav.light .toogler-dark{
+    color: #D5D4D8;
+}
+.nav.light .toogler-light{
+    color: #2B283A;
+}
+
+.nav.light .toogler-slide{
+    justify-content: start;
 }

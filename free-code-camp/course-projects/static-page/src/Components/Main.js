@@ -1,6 +1,6 @@
-export default function Main(){
+export default function Main(props){
     return (
-        <main className="main">
+        <main className={'main' + (props.dark ? '' : ' light')}>
             <h1>Fun Facts about React:</h1>
             <ul className="factList">
                 <li className="fact"> Was first released in 2013. </li>
